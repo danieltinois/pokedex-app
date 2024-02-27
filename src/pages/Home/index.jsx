@@ -5,6 +5,8 @@ import PokeCard from "../../components/PokeCard";
 import Loading from "../../components/Loading";
 import ButtonScrollTop from "../../components/ButtonScrollTop";
 
+import iconLoading from "../../assets/icon_loading.gif";
+
 const HomePage = () => {
   const [allPokemons, setAllPokemons] = useState([]);
   const [pokemons, setPokemons] = useState([]);
@@ -34,7 +36,7 @@ const HomePage = () => {
       setAllPokemons(allPokemonData);
       setPokemons(allPokemonData.slice(0, visiblePokemons));
     } catch (error) {
-      console.log(error);
+      console.log("Error", error);
     }
   };
 
@@ -72,7 +74,7 @@ const HomePage = () => {
       const pokemon = response.data;
       setPokemons([pokemon]);
     } catch (error) {
-      console.log("Pokemon not found:", error);
+      // console.log("Pokemon not found:", error);
       const similarPokemons = allPokemons.filter((pokemon) =>
         pokemon.name.includes(name.toLowerCase())
       );
@@ -122,14 +124,14 @@ const HomePage = () => {
             <div>
               <button
                 onClick={loadMorePokemons}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+                className="bg-blue-600 shadow hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
                 disabled={loading}
               >
                 {loading ? (
                   <div className="flex justify-center items-center">
                     <img
                       className="pr-3 w-10"
-                      src="https://media.tenor.com/-UySwvEyDMMAAAAi/bulbasaur-pokemon.gif"
+                      src={iconLoading}
                       alt="Loading..."
                     />
                     Carregando...
