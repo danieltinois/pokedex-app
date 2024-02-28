@@ -1,12 +1,12 @@
 <p align="center">
-<img alt="PokeDex" title="PokeDex" src="https://imgs.search.brave.com/KF4obDy-N5Qh5M6FhaJy8zhlmW5-U5BM_WipsYrDfOQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzU0LzJk/LzMzLzU0MmQzM2Zj/NzMyOWM0MzMzM2M0/OWQzOTVjM2Y4ZTdi/LmpwZw" width="100%" />
+<img alt="PokeDex" title="PokeDex" src="https://i.ibb.co/g91KvvC/pokedex.png" width="100%" />
 </p>
 
 <br/>
 
 # PokeDex
 
-> PokeDex | Feito com react js e usando tailwind
+> PokeDex | Feito com react js
 
 ## 💻 Projeto
 
