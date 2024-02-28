@@ -14,10 +14,10 @@ Pokedex usadando a api pokeapi, feito com react js e tailwind
 
 ### 📄 O que foi usado:
 
-- react-router-dom
-- react-icons
-- tailwind
-- axios
+- ✅react-router-dom
+- ✅react-icons
+- ✅tailwind
+- ✅axios
 
 ### 🛠 Mão na massa:
 
