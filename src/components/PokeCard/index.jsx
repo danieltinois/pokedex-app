@@ -7,13 +7,13 @@ const PokeCard = ({ name, image, types }) => {
   };
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-600 transition-all cursor-pointer dark:bg-gray-800 dark:border-gray-700">
-      <div className="flex justify-center items-center mt-10">
+    <div className="max-w-sm bg-white hover:bg-blue-100 border border-gray-200 rounded-lg shadow dark:hover:bg-gray-600 transition-all cursor-pointer dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex justify-center items-center pt-10 pb-14">
         <a href="#">
           <img className="" src={image} alt={name} />
         </a>
       </div>
-      <hr className="w-48 h-1 mx-auto mt-10 mb-3 bg-gray-100 border-0 rounded dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto mt-2 mb-3 bg-gray-100 border-0 rounded dark:bg-gray-700"></hr>
       <div className="p-5">
         <h5 className="flex justify-center items-center mb-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           - {name} -

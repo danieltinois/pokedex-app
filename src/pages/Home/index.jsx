@@ -97,12 +97,12 @@ const HomePage = () => {
   };
 
   return (
-    <div className="w-full min-h-screen dark:bg-gray-700">
+    <div className="w-full min-h-screen bg-gray-100 dark:bg-gray-700">
       <div>
         <NavBar pokemonFilter={handleSearch} />
 
         {pokemons.length === 0 ? (
-          <div className="w-full flex justify-center items-center mt-5">
+          <div className="w-full h-[800px] flex justify-center items-center mt-16">
             <Loading />
           </div>
         ) : (
@@ -134,7 +134,7 @@ const HomePage = () => {
                       src={iconLoading}
                       alt="Loading..."
                     />
-                    Carregando...
+                    Loading ...
                   </div>
                 ) : (
                   "View more"

@@ -2,16 +2,16 @@ import logoPokebola from "../../assets/logo-pokebola.webp";
 
 const NavBar = ({ pokemonFilter }) => {
   return (
-    <nav className="bg-white shadow- border-gray-200 dark:bg-gray-900">
-      <div className="flex flex-wrap items-center justify-between mx-5 p-4">
+    <nav className="bg-blue-800 shadow- border-gray-200 dark:bg-gray-900">
+      <div className="flex flex-wrap items-center justify-between mx-5 p-7">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logoPokebola} className="h-12 pr-1" alt="PokeDex Logo" />
-          <span className="self-center text-3xl font-semibold font-mono whitespace-nowrap dark:text-white">
+          <img src={logoPokebola} className="h-14 pr-1" alt="PokeDex Logo" />
+          <span className="self-center text-3xl font-semibold font-mono whitespace-nowrap text-white">
             PokeDex
           </span>
         </a>
         <div className="flex md:order-2">
-          <form className="max-w-md mx-auto">
+          <form className="max-w-md mx-auto w-[900px]">
             <label
               htmlFor="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -39,7 +39,7 @@ const NavBar = ({ pokemonFilter }) => {
               <input
                 type="search"
                 id="search-navbar"
-                className="block w-96 p-4 ps-10 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block w-full p-4 ps-10 text-base shadow-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search Pokemons..."
                 onChange={pokemonFilter}
                 required
